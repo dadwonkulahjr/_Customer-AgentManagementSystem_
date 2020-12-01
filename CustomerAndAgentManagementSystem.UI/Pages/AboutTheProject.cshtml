@@ -1,0 +1,28 @@
+﻿@page
+@model CustomerAndAgentManagementSystem.UI.Pages.AboutTheProjectModel
+@{
+    ViewData["Title"] = "About the project";
+}
+
+<h2 class="display-4 mt-2">
+    About this project <i class="oi oi-info"></i>
+</h2>
+<hr />
+<div class="row">
+    <div class="col-sm-12">
+        <div class="card-deck">
+            <div class="card"  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                <div class="card-header text-center">
+                    <p class="card-body" style="font-family:Verdana">
+                        This project is a simple open source Customer & Agent Management System build using the ASP NET Core Framework, which anyone can view the source code on Git Hub and can also access the app from anywhere around the world, all you need is internet connection, and you can play around with it if you want to, nahh!! lol, hey please, i want you play around with the application, so i can experience maintaining the application for a very long time, so play around with it, just take time with my app, hahahaha, just kidding, i did this project just to demostrate my tech skills to the world at large in C# OOP, for those of you who don't know what is "OOP" it stands for Object
+                        Oriented Programming, this project is also an open source project on Git Hub which a C# ASP NET Core developer can add his or her functionalities, this application demostrate the CRUD operations, to those who don't know what is "CRUD"
+                        it means Create, Read, Update, and Delete with the Asp Net Core Framework, as a developer it's essential you have these skills, this application has the ability to create new customer, read the customer information, update the customer information if required,
+                        and also you can delete a customer if you want to, but the customer has some constraints in the database, when we talk about constraints in databases, they are requirement(s), so it's mandatory you give a customer an agent why creating a new customer in the system, so to create a new customer in the system you have to assiged that customer to an agent that's the relationship. A customer can have only one agent,
+                        but an agent can have many customers. Note, when an agent has been assigned to a customer you cannot delete that agent from the system, the database won't allow us do that is forbidden. This is just a simple demostration of a one to many relationship in Relational Databases. You can also create an agent, read the agent information, update the agent information and delete the agent from the system if required, Note, the application comes with some default agents added to the agent table, but you can create your own agent, but you can't delete those agents who are already assigned to a customer and added in the sytem, lastly than
+                        you can assiged that agent of your choice to a customer when creating a new customer. Also notice something on the home page before you go, the date and time on the website as you click on the home page link the time updates, Thanks for visiting this site!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

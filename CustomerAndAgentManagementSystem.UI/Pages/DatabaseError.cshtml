@@ -1,0 +1,23 @@
+﻿@page
+@model CustomerAndAgentManagementSystem.UI.Pages.DatabaseErrorModel
+@{
+    ViewData["Title"] = "Cannot delete an agent";
+}
+<h2 class="display-4 mt-2">
+   Not Possiable<i class="oi oi-delete" style="font-size:40px"></i>
+</h2>
+<hr />
+<div class="alert alert-danger">
+    <h5>
+        Sorry!
+    </h5>
+    <hr />
+    <p>
+        You cannot delete an agent who is already asigned 
+        to a customer, remember what i told you in the about the project 
+        page. the relationship won't allow us do that, thanks for you understanding!
+    </p>
+</div>
+<a class="btn btn-primary w-100" asp-page="/AgentList/Index">
+    Click on the link to go back to the agent list
+</a>

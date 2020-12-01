@@ -1,0 +1,44 @@
+﻿@page
+@model CustomerAndAgentManagementSystem.UI.Pages.AgentList.CreateModel
+@{
+    ViewData["Title"] = "Create new record";
+}
+
+<h2 class="display-4 mt-2">
+    Create<i class="oi oi-file" style="font-size:40px"></i>
+</h2>
+<hr />
+<form method="post">
+    <div class="row form-group">
+        <label class="col-form-label col-md-2" asp-for="Agent.AgentFirstName"></label>
+        <div class="col-sm-10">
+            <input type="text" asp-for="Agent.AgentFirstName" class="form-control" placeholder="Agent First Name..." />
+            <span asp-validation-for="Agent.AgentFirstName" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="row form-group">
+        <label class="col-form-label col-md-2" asp-for="Agent.AgentLastName"></label>
+        <div class="col-sm-10">
+            <input type="text" asp-for="Agent.AgentLastName" class="form-control" placeholder="Agent Last Name..." />
+            <span asp-validation-for="Agent.AgentLastName" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="row form-group">
+        <label class="col-form-label col-md-2" asp-for="Agent.AgentEmail"></label>
+        <div class="col-sm-10">
+            <input type="text" asp-for="Agent.AgentEmail" class="form-control" placeholder="Agent Email..." />
+            <span asp-validation-for="Agent.AgentEmail" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="row form-group">
+        <div class="col-sm-10">
+            <button class="btn btn-outline-primary" type="submit">Create</button>
+            <a asp-page="/AgentList/Index" class="btn btn-outline-secondary">Back</a>
+        </div>
+    </div>
+    @section Scripts{
+        <partial name="_ValidationScriptsPartial" />
+
+    }
+</form>

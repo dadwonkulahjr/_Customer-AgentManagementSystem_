@@ -1,0 +1,22 @@
+﻿@page
+@model CustomerAndAgentManagementSystem.UI.Pages.CustomerNotFoundModel
+@{
+    ViewData["Title"] = "Not Found";
+}
+
+<h2 class="display-4 mt-2">
+    Not Found <i class="oi oi-person"></i>
+</h2>
+<hr />
+<div class="alert alert-danger">
+    <h3>
+        The resource you are looking for not found.
+    </h3>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <a asp-page="/CustomerList/Index" class="btn btn-primary w-100">
+            Click on the link to view the list of customers
+        </a>
+    </div>
+</div>

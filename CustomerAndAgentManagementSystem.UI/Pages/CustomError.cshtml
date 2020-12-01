@@ -1,0 +1,21 @@
+﻿@page
+@model CustomerAndAgentManagementSystem.UI.Pages.CustomErrorModel
+@{
+    ViewData["Title"] = "Error 404";
+}
+
+<h2 class="display-4 mt-2">
+    Error 404<i class="oi oi-delete" style="font-size:40px"></i>
+</h2>
+<hr />
+
+<div class="alert alert-danger">
+    <h3>
+        The resource you are looking for cannot be found
+        at this moment.
+    </h3>
+</div>
+<a asp-page="/Index" class="btn btn-primary w-100">
+    Click the link to go back home
+    <i class="oi oi-home"></i>
+</a> 

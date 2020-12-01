@@ -1,0 +1,52 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="~/images/carousel 12.jpg" alt="Los Angeles" width="1100" height="500">
+            <div class="carousel-caption">
+                <h1 class="display-4 mt-2">
+                    The current date & and time check on this site @Model.CurrentDateCheck
+                </h1>
+                <p>
+                    Are you interested in Databases?
+                </p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="~/images/carousel 6.jpg" alt="Chicago" width="1100" height="500">
+            <div class="carousel-caption">
+                <h1 class="display-4 mt-2">
+                    The current date & and time check on this site @Model.CurrentDateCheck
+                </h1>
+                <h3>Web Apps Development</h3>
+                <p>Are you interested in buiding web apps?</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="~/images/carousel 14.jpg" alt="New York" width="1100" height="500">
+            <div class="carousel-caption">
+                <h1 class="display-4 mt-2">
+                    The current date & and time check on this site @Model.CurrentDateCheck
+                </h1>
+                <h3>We love to program over here!</h3>
+                <p>Are you intersted in computer programming?</p>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>

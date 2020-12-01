@@ -1,0 +1,36 @@
+﻿@page "{id:int?}"
+@model CustomerAndAgentManagementSystem.UI.Pages.AgentList.DetailsModel
+@{
+    ViewData["Title"] = "Agent Details";
+}
+
+<h2 class="display-4 mt-2">
+    Agent Details<i class="oi oi-info" style="font-size:40px"></i>
+</h2>
+<hr />
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div class="card-deck">
+            <div class="card mt-2">
+                <div class="card-header">
+                    <h2 class="display-4 text-center">
+                        @Model.Agent.GetFullName
+                    </h2>
+                </div>
+                <div class="card-body text-center">
+                    <h5 class="card-text">
+                        Email : @Model.Agent.AgentEmail
+                    </h5>
+                </div>
+                <div class="card-footer text-center">
+                    <a asp-page="Index" class="btn btn-outline-info btn-sm mb-2">Back</a>
+                    <a asp-page="Edit" asp-route-id="@Model.Agent.AgentId" class="btn btn-outline-primary btn-sm mb-2">Edit</a>
+                    <a asp-page="Delete" asp-route-id="@Model.Agent.AgentId" class="btn btn-outline-danger btn-sm mb-2">Delete</a>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
