@@ -9,7 +9,7 @@ namespace CustomerAndAgentManagementSystem.UI.Pages
         public string CurrentDateCheck { get; set; }
         public void OnGet()
         {
-            CurrentDateCheck = DateTime.Now.ToString();
+            CurrentDateCheck = DateTime.Today.ToLongDateString();
         }
     }
 }
