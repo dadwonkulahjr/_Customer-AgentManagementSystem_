@@ -1,6 +1,5 @@
 C:\Users\Dad S. Wonkulah Jr\source\repos\CustomerAndAgentManagementSystem\CustomerAndAgentManagementSystem.UI\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Dad S. Wonkulah Jr\source\repos\CustomerAndAgentManagementSystem\CustomerAndAgentManagementSystem.UI\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\Dad S. Wonkulah Jr\source\repos\CustomerAndAgentManagementSystem\CustomerAndAgentManagementSystem.UI\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\Dad S. Wonkulah Jr\source\repos\CustomerAndAgentManagementSystem\CustomerAndAgentManagementSystem.UI\bin\Debug\netcoreapp3.1\CustomerAndAgentManagementSystem.UI.exe
 C:\Users\Dad S. Wonkulah Jr\source\repos\CustomerAndAgentManagementSystem\CustomerAndAgentManagementSystem.UI\bin\Debug\netcoreapp3.1\CustomerAndAgentManagementSystem.UI.deps.json
 C:\Users\Dad S. Wonkulah Jr\source\repos\CustomerAndAgentManagementSystem\CustomerAndAgentManagementSystem.UI\bin\Debug\netcoreapp3.1\CustomerAndAgentManagementSystem.UI.runtimeconfig.json
@@ -310,7 +309,6 @@ C:\Users\Dad S. Wonkulah Jr\source\repos\CustomerAndAgentManagementSystem\Custom
 C:\Users\Dad S. Wonkulah Jr\source\repos\CustomerAndAgentManagementSystem\CustomerAndAgentManagementSystem.UI\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\Dad S. Wonkulah Jr\source\repos\CustomerAndAgentManagementSystem\CustomerAndAgentManagementSystem.UI\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\Dad S. Wonkulah Jr\source\repos\CustomerAndAgentManagementSystem\CustomerAndAgentManagementSystem.UI\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Dad S. Wonkulah Jr\source\repos\CustomerAndAgentManagementSystem\CustomerAndAgentManagementSystem.UI\obj\Debug\netcoreapp3.1\CustomerAndAgentManagementSystem.UI.csprojAssemblyReference.cache
 C:\Users\Dad S. Wonkulah Jr\source\repos\CustomerAndAgentManagementSystem\CustomerAndAgentManagementSystem.UI\obj\Debug\netcoreapp3.1\CustomerAndAgentManagementSystem.UI.AssemblyInfoInputs.cache
 C:\Users\Dad S. Wonkulah Jr\source\repos\CustomerAndAgentManagementSystem\CustomerAndAgentManagementSystem.UI\obj\Debug\netcoreapp3.1\CustomerAndAgentManagementSystem.UI.AssemblyInfo.cs
 C:\Users\Dad S. Wonkulah Jr\source\repos\CustomerAndAgentManagementSystem\CustomerAndAgentManagementSystem.UI\obj\Debug\netcoreapp3.1\CustomerAndAgentManagementSystem.UI.RazorAssemblyInfo.cache
@@ -383,7 +381,6 @@ C:\Users\Dad S. Wonkulah Jr\source\repos\CustomerAndAgentManagementSystem\Custom
 C:\Users\Dad S. Wonkulah Jr\source\repos\CustomerAndAgentManagementSystem\CustomerAndAgentManagementSystem.UI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Blazor.HttpClient.dll
 C:\Users\Dad S. Wonkulah Jr\source\repos\CustomerAndAgentManagementSystem\CustomerAndAgentManagementSystem.UI\bin\Debug\netcoreapp3.1\CustomerAndAgentManagementSystem.Services.dll
 C:\Users\Dad S. Wonkulah Jr\source\repos\CustomerAndAgentManagementSystem\CustomerAndAgentManagementSystem.UI\bin\Debug\netcoreapp3.1\CustomerAndAgentManagementSystem.Services.pdb
-C:\Users\Dad S. Wonkulah Jr\source\repos\CustomerAndAgentManagementSystem\CustomerAndAgentManagementSystem.UI\obj\Debug\netcoreapp3.1\Razor\Pages\CustomerList\Index.cshtml.g.cs
 C:\Users\Dad S. Wonkulah Jr\source\repos\CustomerAndAgentManagementSystem\CustomerAndAgentManagementSystem.UI\obj\Debug\netcoreapp3.1\Razor\Pages\CustomerList\Create.cshtml.g.cs
 C:\Users\Dad S. Wonkulah Jr\source\repos\CustomerAndAgentManagementSystem\CustomerAndAgentManagementSystem.UI\obj\Debug\netcoreapp3.1\Razor\Pages\AgentList\Index.cshtml.g.cs
 C:\Users\Dad S. Wonkulah Jr\source\repos\CustomerAndAgentManagementSystem\CustomerAndAgentManagementSystem.UI\obj\Debug\netcoreapp3.1\Razor\Pages\AgentList\Create.cshtml.g.cs
@@ -401,3 +398,6 @@ C:\Users\Dad S. Wonkulah Jr\source\repos\CustomerAndAgentManagementSystem\Custom
 C:\Users\Dad S. Wonkulah Jr\source\repos\CustomerAndAgentManagementSystem\CustomerAndAgentManagementSystem.UI\obj\Debug\netcoreapp3.1\Razor\Pages\AboutDev.cshtml.g.cs
 C:\Users\Dad S. Wonkulah Jr\source\repos\CustomerAndAgentManagementSystem\CustomerAndAgentManagementSystem.UI\obj\Debug\netcoreapp3.1\Razor\Pages\AboutTheProject.cshtml.g.cs
 C:\Users\Dad S. Wonkulah Jr\source\repos\CustomerAndAgentManagementSystem\CustomerAndAgentManagementSystem.UI\obj\Debug\netcoreapp3.1\Razor\Pages\DatabaseError.cshtml.g.cs
+C:\Users\Dad S. Wonkulah Jr\source\repos\CustomerAndAgentManagementSystem\CustomerAndAgentManagementSystem.UI\obj\Debug\netcoreapp3.1\CustomerAndAgentManagementSystem.UI.csproj.AssemblyReference.cache
+C:\Users\Dad S. Wonkulah Jr\source\repos\CustomerAndAgentManagementSystem\CustomerAndAgentManagementSystem.UI\obj\Debug\netcoreapp3.1\scopedcss\bundle\CustomerAndAgentManagementSystem.UI.styles.css
+C:\Users\Dad S. Wonkulah Jr\source\repos\CustomerAndAgentManagementSystem\CustomerAndAgentManagementSystem.UI\obj\Debug\netcoreapp3.1\Razor\Pages\CustomerList\Index.cshtml.g.cs

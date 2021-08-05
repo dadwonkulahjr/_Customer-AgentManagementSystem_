@@ -6349,6 +6349,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "projectReferences": {
             "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\CustomerAndAgentManagementSystem\\CustomerAndAgentManagementSystem.Models\\CustomerAndAgentManagementSystem.Models.csproj": {
               "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\CustomerAndAgentManagementSystem\\CustomerAndAgentManagementSystem.Models\\CustomerAndAgentManagementSystem.Models.csproj"
@@ -6364,6 +6365,7 @@
     },
     "frameworks": {
       "netstandard2.0": {
+        "targetAlias": "netstandard2.0",
         "dependencies": {
           "Microsoft.AspNetCore.Blazor.HttpClient": {
             "target": "Package",
@@ -6386,7 +6388,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

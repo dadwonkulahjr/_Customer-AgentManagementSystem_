@@ -9,7 +9,6 @@ namespace CustomerAndAgentManagementSystem.Services
     public class CustomerService : ICustomerStore
     {
         private readonly AppDbContext _appDbContext;
-
         public CustomerService(AppDbContext appDbContext)
         {
             _appDbContext = appDbContext;
@@ -20,7 +19,6 @@ namespace CustomerAndAgentManagementSystem.Services
             await _appDbContext.SaveChangesAsync();
             return result.Entity;
         }
-
         public async Task<Customer> DeleteExistingCustomer(int id)
         {
             Customer findCustomer = await _appDbContext.Customers.FindAsync(id);
@@ -32,18 +30,15 @@ namespace CustomerAndAgentManagementSystem.Services
             }
             return null;
         }
-
         public async Task<IEnumerable<Customer>> GetAllCustomers()
         {
             return await _appDbContext.Customers
                 .ToListAsync();
         }
-
         public async Task<Customer> GetCustomerById(int id)
         {
             return await _appDbContext.Customers.FindAsync(id);
         }
-
         public async Task<Customer> UpdateCustomer(Customer customerChanges)
         {
             var updateCustomer = _appDbContext.Customers.Attach(customerChanges);

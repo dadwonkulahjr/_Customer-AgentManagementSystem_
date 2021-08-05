@@ -4,76 +4,77 @@
     ViewData["Title"] = "Customer List";
 }
 
-<h2 class="display-4 mt-2" style="font-size:7vw">
-    Customer List<i class="oi oi-dashboard" style="font-size:40px"></i>
-</h2>
-<hr />
 @if (Model.Customers.Any())
 {
+<div class="border backgroundWhite container shadow" style="margin-top:10%">
     <div class="row">
-        <div class="ml-auto mb-2 mr-3"><a asp-page="Create" class="btn btn-outline-primary">Create new record</a></div>
-    </div>
-}
-@if (Model.Customers.Any())
-{
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="table-responsive">
-                <table class="table table-striped table-bordered">
-                    <thead>
-                        <tr>
-                            <th>Customer FullName</th>
-                            <th>Customer Email</th>
-                            <th>Agent FullName</th>
-                            <th>Agent Email</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach (var customer in Model.Customers)
-                        {
-                            <partial name="_customerIterationPartial" model="customer" />
-                        }
-                    </tbody>
-                </table>
-
-
-            </div>
+        <div class="col-12 mt-2">
+            <h4 class="text-secondary">
+                <i class="fas fa-users"></i>&nbsp;Customer List
+            </h4>
         </div>
     </div>
+    <div class="row">
+        <div class="col-12 text-right">
+            <a asp-page="create" class="btn btn-success"><i class="fas fa-plus-circle">&nbsp;Create new customer record</i></a>
+        </div>
+    </div>
+    <hr />
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover mt-4">
+            <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Fullname</th>
+                    <th>Email</th>
+                    <th>Agent</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < Model.Customers.Count; i++)
+                {
+                    <tr>
+                        <td>
+                            @Model.Customers[i].CustomerFirstName
+                        </td>
+                        <td>
+                            @Model.Customers[i].CustomerLastName
+                        </td>
+                        <td>
+                            @Model.Customers[i].GetCustomerFullName
+                        </td>
+                        <td>
+                            @Model.Customers[i].CustomerEmail
+                        </td>
+                        <td>
+                            @Model.Customers[i].Agent.GetFullName
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
 }
 else
 {
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="card-deck">
-                <div class="card">
-                    <div class="card-header">
-                        <h3 class="card-text">
-                            No record yet to be display! <i class="oi oi-dashboard" style="font-size:20px"></i>
-                        </h3>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-text">
-                            Click on the button below to create new record
-                            <i class="oi oi-arrow-bottom"></i>
-                        </h5>
-                    </div>
-                    <div class="card-footer">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <a type="button" class="btn btn-outline-secondary w-100" asp-page="Create">
-                                    Create new record
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+    <div class="border backgroundWhite container shadow" style="margin-top:70px;">
+        <div class="card-deck mt-3 mb-2">
+            <div class="card">
+                <div class="card-body">
+                    <h3>No record yet to be display</h3>
+                    <p>Click on the button below to create new record!</p>
                 </div>
-
-
+                <div class="card-footer text-center">
+                    <a asp-page="Create" class="btn btn-block btn-outline-secondary">
+                        Create new record
+                    </a>
+                </div>
             </div>
+
         </div>
     </div>
 }
-
 

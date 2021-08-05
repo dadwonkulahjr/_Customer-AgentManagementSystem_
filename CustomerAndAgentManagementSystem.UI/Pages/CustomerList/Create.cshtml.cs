@@ -11,13 +11,11 @@ namespace CustomerAndAgentManagementSystem.UI.Pages.CustomerList
     {
         private readonly AppDbContext _repository;
         private readonly ICustomerStore _customerStoreRepository;
-
         public CreateModel(AppDbContext repository, ICustomerStore customerStoreRepository)
         {
             _repository = repository;
             _customerStoreRepository = customerStoreRepository;
         }
-
         [BindProperty]
         public Customer Customer { get; set; }
         public IActionResult OnGet()
@@ -25,7 +23,6 @@ namespace CustomerAndAgentManagementSystem.UI.Pages.CustomerList
             ViewData["AgentId"] = new SelectList(_repository.Agents, "AgentId", "GetFullName");
             return Page();
         }
-
         public async Task<IActionResult> OnPost()
         {
             if (!ModelState.IsValid)

@@ -11,7 +11,6 @@ namespace CustomerAndAgentManagementSystem.Api.Controllers
     public class AgentsController : ControllerBase
     {
         private readonly IAgentStore _repository;
-
         public AgentsController(IAgentStore repository)
         {
             _repository = repository;
@@ -31,7 +30,6 @@ namespace CustomerAndAgentManagementSystem.Api.Controllers
                     "There were error in retrieving the data from the database!");
             }
         }
-
         [HttpGet(template: "{id:int}")]
         public async Task<ActionResult> GetAgent(int id)
         {
@@ -74,7 +72,6 @@ namespace CustomerAndAgentManagementSystem.Api.Controllers
                     "There were error in createing new customer, Please contact your admin!");
             }
         }
-
         [HttpPut()]
         public async Task<ActionResult> UpdateAgent(Agent agent)
         {
@@ -98,7 +95,6 @@ namespace CustomerAndAgentManagementSystem.Api.Controllers
                      "There were error in updating the data from the database!");
             }
         }
-
         [HttpDelete("{id:int}")]
         public async Task<ActionResult> DeleteAgent(int id)
         {

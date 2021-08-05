@@ -38,7 +38,6 @@ namespace CustomerAndAgentManagementSystem.UI.Pages.CustomerList
             ViewData["AgentId"] = new SelectList(_appDbContext.Agents, "AgentId", "GetFullName");
             return Page();
         }
-
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)

@@ -35,7 +35,6 @@ namespace CustomerAndAgentManagementSystem.UI.Pages.CustomerList
             }
             return Page();
         }
-
         public async Task<IActionResult> OnPostCheckDeleteAsync(int? id)
         {
             Customer = await _appDbContext.Customers

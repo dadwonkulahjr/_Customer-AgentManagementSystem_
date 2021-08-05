@@ -11,7 +11,6 @@ namespace CustomerAndAgentManagementSystem.Api.Controllers
     public class CustomersController : ControllerBase
     {
         private readonly ICustomerStore _repository;
-
         public CustomersController(ICustomerStore repository)
         {
             _repository = repository;
@@ -74,7 +73,6 @@ namespace CustomerAndAgentManagementSystem.Api.Controllers
                     "There were error in createing new customer, Please contact your admin!");
             }
         }
-
         [HttpPut()]
         public async Task<ActionResult> UpdateCustomer(Customer customer)
         {
@@ -98,7 +96,6 @@ namespace CustomerAndAgentManagementSystem.Api.Controllers
                      "There were error in updating the data from the database!");
             }
         }
-
         [HttpDelete("{id:int}")]
         public async Task<ActionResult> DeleteCustomer(int id)
         {
